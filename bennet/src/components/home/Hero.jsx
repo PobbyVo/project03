@@ -4,33 +4,13 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
 import './hero.scss';
+import { CldVideoPlayer } from 'next-cloudinary';
+// import 'next-cloudinary/dist/cld-video-player.css';
 import Link from "next/link";
-
 
 const Hero = () => {
     const triggers = Array(6).fill(null);
 
-    // const brands = ['Adidas', 'Calvin Klein', 'Hourglass', 'Eilish', 'The Outset', 'MAC'];
-    // const brandsTwo = ['Calvin Klein', 'Hourglass', 'Eilish', 'The Outset', 'MAC'];
-    // const videoSources = [
-    //     "./home/video-01.mp4",
-    //     "./home/video-02.mp4",
-    //     "./home/video-03.mp4",
-    //     "./home/video-04.mp4",
-    //     "./home/video-05.mp4",
-    //     "./home/video-06.mp4"
-    // ];
-
-    // // Create refs for brands and inactive brands
-    // const Hero = brands.map(() => useRef(null));
-    // const InActive = brandsTwo.map(() => useRef(null));
-
-    // // Create refs for video assets and figures
-    // const refs = Array.from({ length: 6 }, () => ({
-    //     asset: useRef(null),
-    //     fig: useRef(null)
-    // }));
-    
     const Hero0 = useRef(null);
     const Hero1 = useRef(null);
     const Hero2 = useRef(null);
@@ -491,41 +471,31 @@ const Hero = () => {
                                 <div className="home-hero-inactive-titles__item ttu h1" ref={InActive4}>
                                     MAC
                                 </div>
-                                {/* {brandsTwo.map((brand, index) => (
-                                    <div className="home-hero-inactive-titles__item ttu h1"
-                                        ref={InActive[index]}
-                                        key={brand}
-                                    >
-                                        {brand}
-                                    </div>
-                                ))} */}
                             </div>
                         </div>
                         <div className="home-hero-assets is-visible">
-                            {/* {videoSources.map((src, index) => (
-                                <div className="home-hero-asset oh" ref={refs[index].asset} key={index}>
-                                    <div className="home-hero-asset__fig" ref={refs[index].fig}>
-                                        <div className={`base-video base-video--fit ${index === 0 ? 'base-video--loaded' : ''}`}>
-                                            <video width="1920" height="1080" autoPlay muted loop>
-                                                <source src={src} type="video/mp4" />
-                                            </video>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))} */}
                             <div className="home-hero-asset oh" ref={assetRef0} >
                                 <div className="home-hero-asset__fig" ref={figRef0}>
                                     <div className="base-video base-video--fit">
-                                        <video width="1920" height="1080" autoPlay muted loop>
+                                        {/* <video width="1920" height="1080" autoPlay muted loop>
                                             <source src="./home/video-01.mp4" type="video/mp4" />
-                                        </video>
+                                        </video> */}
+                                        <CldVideoPlayer
+                                            width="1920"
+                                            height="1080"
+                                            src="cfuyckcv6slwbgwne5yi"
+                                            // autoPlay="on-scroll"
+                                            loop
+                                            muted
+                                            autoplay
+                                        />
                                     </div>
                                 </div>
                             </div>
                             <div className="home-hero-asset oh" ref={assetRef1} >
                                 <div className="home-hero-asset__fig" ref={figRef1}>
                                     <div className="base-video base-video--fit base-video--loaded">
-                                        <video width="1920" height="1080" autoPlay muted loop>
+                                        <video width="1920" height="1080" autoPlay muted loop preload="none">
                                             <source src="./home/video-02.mp4" type="video/mp4" />
                                         </video>
                                     </div>
@@ -534,7 +504,7 @@ const Hero = () => {
                             <div className="home-hero-asset oh" ref={assetRef2} >
                                 <div className="home-hero-asset__fig" ref={figRef2}>
                                     <div className="base-video base-video--fit">
-                                        <video width="1920" height="1080" autoPlay muted loop>
+                                        <video width="1920" height="1080" autoPlay muted loop preload="none">
                                             <source src="./home/video-03.mp4" type="video/mp4" />
                                         </video>
                                     </div>
@@ -543,7 +513,7 @@ const Hero = () => {
                             <div className="home-hero-asset oh" ref={assetRef3} >
                                 <div className="home-hero-asset__fig" ref={figRef3}>
                                     <div className="base-video base-video--fit base-video--loaded">
-                                        <video width="1920" height="1080" autoPlay muted loop>
+                                        <video width="1920" height="1080" autoPlay muted loop preload="none">
                                             <source src="./home/video-04.mp4" type="video/mp4" />
                                         </video>
                                     </div>
@@ -552,7 +522,7 @@ const Hero = () => {
                             <div className="home-hero-asset oh" ref={assetRef4} >
                                 <div className="home-hero-asset__fig" ref={figRef4}>
                                     <div className="base-video base-video--fit">
-                                        <video width="1920" height="1080" autoPlay muted loop>
+                                        <video width="1920" height="1080" autoPlay muted loop preload="none">
                                             <source src="./home/video-05.mp4" type="video/mp4" />
                                         </video>
                                     </div>
@@ -560,7 +530,7 @@ const Hero = () => {
                             </div>
                             <div className="home-hero-asset oh" ref={assetRef5} >
                                 <div className="home-hero-asset__fig" ref={figRef5}>
-                                    <div className="base-video base-video--fit base-video--loaded">
+                                    <div className="base-video base-video--fit base-video--loaded" preload="none">
                                         <video width="1920" height="1080" autoPlay muted loop>
                                             <source src="./home/video-06.mp4" type="video/mp4" />
                                         </video>
@@ -574,5 +544,4 @@ const Hero = () => {
         </div>
     )
 }
-
 export default Hero
