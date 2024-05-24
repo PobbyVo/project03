@@ -483,8 +483,7 @@ const Hero = () => {
                                         <CldVideoPlayer
                                             width="1920"
                                             height="1080"
-                                            src="cfuyckcv6slwbgwne5yi"
-                                            // autoPlay="on-scroll"
+                                            src="video01"
                                             loop
                                             muted
                                             autoplay
@@ -495,45 +494,85 @@ const Hero = () => {
                             <div className="home-hero-asset oh" ref={assetRef1} >
                                 <div className="home-hero-asset__fig" ref={figRef1}>
                                     <div className="base-video base-video--fit base-video--loaded">
-                                        <video width="1920" height="1080" autoPlay muted loop preload="none">
+                                        {/* <video width="1920" height="1080" autoPlay muted loop preload="none">
                                             <source src="./home/video-02.mp4" type="video/mp4" />
-                                        </video>
+                                        </video> */}
+                                        <CldVideoPlayer
+                                            width="1920"
+                                            height="1080"
+                                            src="video02"
+                                            loop
+                                            muted
+                                            autoplay="on-scroll"
+                                        />
                                     </div>
                                 </div>
                             </div>
                             <div className="home-hero-asset oh" ref={assetRef2} >
                                 <div className="home-hero-asset__fig" ref={figRef2}>
                                     <div className="base-video base-video--fit">
-                                        <video width="1920" height="1080" autoPlay muted loop preload="none">
+                                        {/* <video width="1920" height="1080" autoPlay muted loop preload="none">
                                             <source src="./home/video-03.mp4" type="video/mp4" />
-                                        </video>
+                                        </video> */}
+                                        <CldVideoPlayer
+                                            width="1920"
+                                            height="1080"
+                                            src="video03"
+                                            loop
+                                            muted
+                                            autoplay="on-scroll"
+                                        />
                                     </div>
                                 </div>
                             </div>
                             <div className="home-hero-asset oh" ref={assetRef3} >
                                 <div className="home-hero-asset__fig" ref={figRef3}>
                                     <div className="base-video base-video--fit base-video--loaded">
-                                        <video width="1920" height="1080" autoPlay muted loop preload="none">
+                                        {/* <video width="1920" height="1080" autoPlay muted loop preload="none">
                                             <source src="./home/video-04.mp4" type="video/mp4" />
-                                        </video>
+                                        </video> */}
+                                        <CldVideoPlayer
+                                            width="1920"
+                                            height="1080"
+                                            src="video04"
+                                            loop
+                                            muted
+                                            autoplay="on-scroll"
+                                        />
                                     </div>
                                 </div>
                             </div>
                             <div className="home-hero-asset oh" ref={assetRef4} >
                                 <div className="home-hero-asset__fig" ref={figRef4}>
                                     <div className="base-video base-video--fit">
-                                        <video width="1920" height="1080" autoPlay muted loop preload="none">
+                                        {/* <video width="1920" height="1080" autoPlay muted loop preload="none">
                                             <source src="./home/video-05.mp4" type="video/mp4" />
-                                        </video>
+                                        </video> */}
+                                        <CldVideoPlayer
+                                            width="1920"
+                                            height="1080"
+                                            src="video05"
+                                            loop
+                                            muted
+                                            autoplay="on-scroll"
+                                        />
                                     </div>
                                 </div>
                             </div>
                             <div className="home-hero-asset oh" ref={assetRef5} >
                                 <div className="home-hero-asset__fig" ref={figRef5}>
                                     <div className="base-video base-video--fit base-video--loaded" preload="none">
-                                        <video width="1920" height="1080" autoPlay muted loop>
+                                        {/* <video width="1920" height="1080" autoPlay muted loop>
                                             <source src="./home/video-06.mp4" type="video/mp4" />
-                                        </video>
+                                        </video> */}
+                                        <CldVideoPlayer
+                                            width="1920"
+                                            height="1080"
+                                            src="video06"
+                                            loop
+                                            muted
+                                            autoplay="on-scroll"
+                                        />
                                     </div>
                                 </div>
                             </div>
