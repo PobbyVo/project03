@@ -1,0 +1,131 @@
+.header-logo {
+    color: #fff;
+    position: relative;
+    &.disable {
+        .header-logo__svg {
+            mix-blend-mode: difference;
+        }
+    }
+}
+.header-logo__svg {
+    fill: currentColor;
+    position: fixed;
+    top: 50%;
+    z-index: 6;
+}
+
+.header-logo__svg--left {
+    height: 9.375vw;
+    left: .52083vw;
+    top: calc(50% - 4.6875vw);
+    width: 54.01042vw;
+}
+
+
+.header-logo__svg--center {
+    height: 9.58333vw;
+    left: calc(60% - 4.03646vw);
+    top: calc(50% - 4.79167vw);
+    width: 8.07292vw;
+}
+
+.header-logo__svg--right {
+    height: 9.58333vw;
+    right: .52083vw;
+    top: calc(50% - 4.79167vw);
+    width: 33.07292vw;
+}
+
+.header-logo__placeholder--left {
+    height: 1.14583vw;
+    left: .52083vw;
+    top: calc(50% - .57292vw);
+    width: 6.5625vw;
+}
+
+.header-logo__placeholder {
+    pointer-events: none;
+    position: fixed;
+    top: 50%;
+}
+
+.header-logo__placeholder--center {
+    height: 3.73333vw;
+    left: calc(50% - 1.6vw);
+    top: calc(50% - 1.86667vw);
+    width: 3.2vw;
+}
+
+.header-logo__placeholder--right {
+    height: 3.73333vw;
+    right: 1rem;
+    top: calc(50% - 1.86667vw);
+    width: 12.8vw;
+}
+
+.header-logo__footer {
+    bottom: 1rem;
+    display: flex;
+    left: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 1rem;
+}
+
+.header-logo-mover {
+    position: relative;
+}
+svg {
+    height: 100%;
+    width: 100%;
+}
+
+.bennett__letter {
+    transition: transform .3s cubic-bezier(.32,.94,.6,1);
+    &:nth-child(2) {
+        transition-delay: .06s;
+    }
+    &:nth-child(3) {
+        transition-delay: .09s;
+    }
+    &:nth-child(4) {
+        transition-delay: .12s;
+    }
+    &:nth-child(5) {
+        transition-delay: .15s;
+    }
+    &:nth-child(6) {
+        transition-delay: .18s;
+    }
+    &:nth-child(7) {
+        transition-delay: .21s;
+    }
+}
+
+.clive__letter {
+    transition: transform .6s cubic-bezier(.32,.94,.6,1);
+    &:first-child {
+        transition-delay: 0s;
+    }
+    &:nth-child(2) {
+        transition-delay: .18s;
+    }
+    &:nth-child(3) {
+        transition-delay: .21s;
+    }
+    &:nth-child(4) {
+        transition-delay: .24s;
+    }
+    &:nth-child(5) {
+        transition-delay: .27s;
+    }
+}
+
+.grid {
+    padding: 0 7.8125vw;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 7.8125vw;
+    display: grid;
+    width: 100%;
+}

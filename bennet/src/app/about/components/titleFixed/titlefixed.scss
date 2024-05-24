@@ -1,0 +1,35 @@
+.about-titles {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translateZ(0);
+    width: 100%;
+    z-index: 5;
+}
+
+h1, h1 {
+    line-height: .73;
+}
+.h1, h1 {
+    font-size: 10.41667vw;
+    letter-spacing: -.07em;
+    font-weight: 600;
+}
+.title-fixed {
+    position: fixed;
+    padding: 0 .4rem;
+    top: 1rem;
+    left: 0;
+}
+
+.ttu {
+    text-transform: uppercase;
+}
+
+.about-titles__item:not(:first-child) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

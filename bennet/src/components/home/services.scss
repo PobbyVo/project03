@@ -1,0 +1,138 @@
+body {
+    background-color: #fff;
+}
+.home-services {
+    background-color: #fff;
+    margin-bottom: 26rem;
+    min-height: 200vw;
+    padding: 40rem 1rem 0;
+    position: relative;
+    @media (min-width: 1024px) {
+        margin-bottom: 25.52083vw;
+        min-height: 75vw;
+        padding: 20.83333vw 0.52083vw 0;
+    }
+}
+
+.home-services__reel-wrapper {
+    height: 120%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.home-services__reel-inner {
+    align-items: center;
+    height: 100dvh;
+    position: sticky;
+    top: 0;
+}
+
+.grid {
+    padding: 0 7.8125vw;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 7.8125vw;
+    display: grid;
+    width: 100%;
+}
+
+.home-services__reel {
+    grid-column: 1 / span 4;
+    height: 80%;
+}
+
+.base-video--fit {
+    height: 100%;
+    width: 100%;
+}
+
+.base-video {
+    display: flex;
+    position: relative;
+}
+
+.base-video--loaded video {
+    opacity: 1;
+}
+
+.base-video video {
+    height: 100%;
+    transition: opacity 0.4s;
+    width: 100%;
+}
+
+.base-video--fit video {
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.home-services__list--left {
+    bottom: 52%;
+    position: fixed;
+}
+
+.home-services__list {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    mix-blend-mode: difference;
+}
+
+.h2--l {
+    font-size: 5.20833vw;
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+    font-weight: 700;
+}
+
+.home-services__list--left .home-services__list-item {
+    bottom: 0;
+    position: absolute;
+    transform: scale(0);
+}
+
+.home-services__list-item {
+    white-space: nowrap;
+}
+
+.home-services__list-item-inner {
+    display: block;
+}
+
+.home-services__list {
+    color: #fff;
+}
+
+.home-services__list--right {
+    right: 0.52083vw;
+    position: absolute;
+    text-align: right;
+}
+
+.home-services__list--right .home-services__list-item {
+    position: sticky;
+    top: 52dvh;
+}
+
+.home-services__list-item {
+    white-space: nowrap;
+}
+
+.home-services__list-item-trigger {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.home-services__list--right .home-services__list-item {
+    position: sticky;
+    top: 52dvh;
+}

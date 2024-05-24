@@ -1,0 +1,51 @@
+@import "../../../../styles/common/common.scss";
+.about-sustainability {
+    padding-bottom: 50svh;
+    margin-top: -30rem;
+    position: relative;
+    z-index: 2;
+    color: #000;
+    background-color: #fff;
+    @include max(1200px) {
+        margin-top: 0;
+    }
+}
+
+.about-sustainability__title {
+    opacity: 0;
+    position: absolute;
+    transform-origin: top;
+}
+
+.h2, h2 {
+    font-size: 3.64583vw;
+    letter-spacing: -.05em;
+    line-height: .9;
+}
+
+.about-sustainability__copy {
+    font-size: 2.08333vw;
+    letter-spacing: -.05em;
+    line-height: 1;
+    padding: 0 5rem;
+    font-weight: 700;
+    p {
+        grid-column-end: span 2;
+    }
+}
+
+.about-sustainability__copy {
+    &.grid {
+        @include max(992px) {
+            grid-template-columns: repeat(2, 1fr);
+            font-size: 2.4rem;
+        }
+        @include max(768px) {
+            font-size: 2rem;
+        }
+        @include max(576px) {
+            font-size: 1.6rem;
+            padding: 0 1.4rem;
+        }
+    }
+}
